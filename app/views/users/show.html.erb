@@ -1,1 +1,6 @@
-<%= @user %>
+<%= @user.profile.display_name %><br />
+<%= @user.profile.rank %><br/>
+<% if current_user.plan_id == 2 %>
+  <%= @user.profile.contact_email %><br/>
+<% end %>
+<%= @user.profile.description %><br/>
