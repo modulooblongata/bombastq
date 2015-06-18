@@ -1,4 +1,5 @@
-<%= @user.profile.display_name %><br />
+<%= image_tag @user.profile.avatar.url %><br/>
+<%= @user.profile.display_name %><br/>
 <%= @user.profile.rank %><br/>
 <% if current_user.plan_id == 2 %>
   <%= @user.profile.contact_email %><br/>
