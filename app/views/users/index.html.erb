@@ -16,7 +16,12 @@
               <%= link_to user do %>
               <h2><%= user.profile.display_name %></h2>
               <% end %>
-              <p><%= user.profile.rank %></p>
+              <p>
+                <%= user.profile.rank %> 
+                  <% if user.plan_id == 2 %>
+                    <span class="label label-warning">PREMIUM</span>
+                  <% end %>
+              </p>
             </div>
           </div>
         </li>
