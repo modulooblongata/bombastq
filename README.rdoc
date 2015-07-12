@@ -1,6 +1,0 @@
-== This is Bombastq
-
-A subscription-based web application
--Sign up for pro or basic
--Create a profile
--Communicate with other people
